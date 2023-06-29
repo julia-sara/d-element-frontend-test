@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+.aa {
+  background-color: rgb(146, 185, 185);
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
