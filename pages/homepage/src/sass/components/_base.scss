@@ -25,9 +25,60 @@ ol[class] {
   list-style: none;
 }
 
-
-//Ограничение контента и Поддержка разных размеров 
+//Ограничение контента и Поддержка разных размеров
 $content-widht: 1180px;
 $tablet-widht: 768px;
 $mobile-big-widht: 414px; //iphone max
 $mobile-small-widht: 320px; //iphone 5
+
+// HEADER
+.flow-container {
+  max-width: 100%;
+}
+.header__container {
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+// HEADER
+
+// MAIN
+// .main-content {
+//   width: 88%;
+//   margin: 0 auto;
+// }
+
+.main-content__hero {
+  background: url(/d-element-frontend-test/assets/img/background1.svg) no-repeat
+    center;
+  padding: 0 0 0 16%;
+  background-size: cover;
+  min-height: 585px;
+}
+.main-content__heroText {
+  margin-top: 8%;
+  width: 50%;
+  min-height: 300px;
+}
+.main-content__heroIllistration-img {
+  position: absolute;
+  left: 49%;
+  top: 13%;
+}
+.main-content__heroText-p {
+  padding: 7% 21% 13% 0%;
+}
+
+.main-content__whatWeDo,
+.main-content__ourClient-wrapper,
+.footer-wrapper {
+  padding: 0 15%;
+}
+.main-content__whatWeDo {
+  margin-top: 14%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+// MAIN
