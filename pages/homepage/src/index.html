@@ -1,16 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- https://docs.google.com/forms/d/10-jlXnYqUiCtwx2Mv0Jg83IKlfCeycV9-WLsTFZKI4I/viewform?edit_requested=true  -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homepage</title>
-    <link rel="stylesheet" href="/pages/homepage/src/sass/style.css" />
-</head>
-<body>
-   <h1 class="aa">111</h1>
+    <link
+      rel="stylesheet"
+      href="/d-element-frontend-test/pages/homepage/src/sass/style.css"
+    />
+  </head>
+  <body>
+    <div class="flow-container">
+      <header class="header">
+        <div class="header__container">
+          <a href="/" class="heder__logo">
+            <!-- <svg
+              data-js-origin-id="logo-de-ru"
+              class="logo-de-ru"
+              viewBox="0 0 232 32"
+            >
+              <path
+                d="M40.2507 29.3102H42.6439V25.1306H41.6327V15.9963H39.2227V25.1306H33.914V15.9963H31.5209V27.2373H40.2507V29.3102zM47.6183 27.2373L52.9775 19.704V27.2373H55.3706V15.9963H52.9101L47.7025 23.26V15.9963H45.3094V27.2373H47.6183zM66.1315 27.2373V26.1081C69.5358 25.8216 71.5582 24.2206 71.5582 21.6252 71.5582 19.0299 69.5358 17.4457 66.1315 17.1423V15.9963H63.7384V17.1423C60.3341 17.4457 58.3117 19.0467 58.3117 21.6252 58.3117 24.2206 60.3341 25.8216 63.7384 26.1081V27.2373H66.1315zM69.1145 21.6252C69.1145 22.9061 68.0696 23.7487 66.1315 23.9678V19.2827C68.0696 19.5186 69.1145 20.3444 69.1145 21.6252zM60.7723 21.6252C60.7723 20.3613 61.8003 19.5186 63.7384 19.2827V23.9678C61.8003 23.7319 60.7723 22.9061 60.7723 21.6252zM76.9254 27.2373V23.2431H79.7904C82.2172 23.2431 83.5654 21.5747 83.5654 19.6197 83.5654 17.6479 82.234 15.9963 79.7904 15.9963H74.5322V27.2373H76.9254zM79.4702 21.1365H76.9254V18.103H79.4702C80.4139 18.103 81.1217 18.676 81.1217 19.6197 81.1217 20.5466 80.4139 21.1365 79.4702 21.1365zM91.6384 27.4395C95.0427 27.4395 97.5201 25.0127 97.5201 21.6252 97.5201 18.2378 95.0427 15.8109 91.6384 15.8109 88.251 15.8109 85.7736 18.2378 85.7736 21.6252 85.7736 25.0127 88.251 27.4395 91.6384 27.4395zM91.6384 25.316C89.5655 25.316 88.2341 23.715 88.2341 21.6252 88.2341 19.5186 89.5655 17.9344 91.6384 17.9344 93.7113 17.9344 95.0596 19.5186 95.0596 21.6252 95.0596 23.715 93.7113 25.316 91.6384 25.316zM106.564 27.2373C108.705 27.2373 109.834 25.889 109.834 24.2037 109.834 22.7881 108.873 21.6252 107.677 21.4398 108.738 21.2208 109.615 20.277 109.615 18.8613 109.615 17.3614 108.519 15.9963 106.379 15.9963H100.463V27.2373H106.564zM105.856 20.4961H102.857V18.0524H105.856C106.665 18.0524 107.171 18.5748 107.171 19.2827 107.171 19.9905 106.665 20.4961 105.856 20.4961zM105.941 25.1644H102.857V22.5521H105.941C106.884 22.5521 107.39 23.1588 107.39 23.8667 107.39 24.6756 106.851 25.1644 105.941 25.1644zM118.228 27.4395C121.632 27.4395 124.11 25.0127 124.11 21.6252 124.11 18.2378 121.632 15.8109 118.228 15.8109 114.841 15.8109 112.363 18.2378 112.363 21.6252 112.363 25.0127 114.841 27.4395 118.228 27.4395zM118.228 25.316C116.155 25.316 114.824 23.715 114.824 21.6252 114.824 19.5186 116.155 17.9344 118.228 17.9344 120.301 17.9344 121.649 19.5186 121.649 21.6252 121.649 23.715 120.301 25.316 118.228 25.316zM129.362 27.2373L134.721 19.704V27.2373H137.114V15.9963H134.654L129.446 23.26V15.9963H127.053V27.2373H129.362zM135.041 13.9908L134.098 13.1987C133.626 13.856 132.935 14.2436 132.092 14.2436 131.216 14.2436 130.525 13.8391 130.07 13.1987L129.126 13.9908C129.817 14.9009 130.895 15.4739 132.092 15.4739 133.305 15.4739 134.367 14.9009 135.041 13.9908zM150.064 27.4395C153.451 27.4395 156.046 25.0801 156.046 21.6252 156.046 18.1704 153.451 15.8109 150.064 15.8109 147.586 15.8109 146.171 17.1592 145.379 18.558L147.435 19.5692C147.906 18.6591 148.918 17.9344 150.114 17.9344 151.783 17.9344 153.03 18.9625 153.451 20.4792H148.109V22.5858H153.502C153.131 24.2037 151.85 25.316 150.114 25.316 148.918 25.316 147.906 24.6082 147.435 23.6813L145.379 24.6756C146.171 26.0744 147.586 27.4395 150.064 27.4395zM157.754 27.4395C160.046 27.4395 161.732 26.58 162.271 21.9117L162.709 18.103H166.13V27.2373H168.54V15.9963H160.552L159.895 21.7432C159.541 24.7093 158.884 25.316 157.754 25.316V27.4395zM179.974 27.2373V25.1306H174.413V22.5858H179.856V20.4792H174.413V18.103H179.974V15.9963H172.02V27.2373H179.974zM195.294 27.2373V15.9963H191.923L189.193 22.7881 186.463 15.9963H183.109V27.2373H185.502V19.3669L188.67 27.2373H189.715L192.884 19.3669V27.2373H195.294zM206.745 27.2373V25.1306H201.183V22.5858H206.627V20.4792H201.183V18.103H206.745V15.9963H198.79V27.2373H206.745zM219.991 27.2373V15.9963H217.581V20.4118H212.273V15.9963H209.88V27.2373H212.273V22.5184H217.581V27.2373H219.991zM228.476 27.2373V18.103H231.745V15.9963H222.78V18.103H226.066V27.2373H228.476zM33.8431 7.63649C36.0424 7.63649 37.4768 6.11715 37.4768 4.09846 37.4768 2.09039 36.0424.549805 33.8431.549805H31.4207V7.63649H33.8431zM33.8431 6.85026H32.3025V1.33603H33.8431C35.5962 1.33603 36.563 2.5685 36.563 4.09846 36.563 5.61779 35.5643 6.85026 33.8431 6.85026zM39.2213 1.77165C39.5188 1.77165 39.7632 1.5379 39.7632 1.24041 39.7632.942919 39.5188.698551 39.2213.698551 38.9344.698551 38.6901.942919 38.6901 1.24041 38.6901 1.5379 38.9344 1.77165 39.2213 1.77165zM39.625 7.63649V2.50475H38.8282V7.63649H39.625zM43.2758 9.71893C44.5295 9.71893 45.7195 9.1877 45.7195 7.48774V2.50475H44.9226V3.28036C44.5083 2.71725 43.892 2.37726 43.2014 2.37726 41.8521 2.37726 40.9171 3.39723 40.9171 5.04406 40.9171 6.70151 41.8627 7.70024 43.2014 7.70024 43.9239 7.70024 44.5508 7.30712 44.9226 6.78651V7.51962C44.9226 8.64584 44.1258 9.0602 43.2758 9.0602 42.5427 9.0602 42.0327 8.86895 41.6077 8.35897L41.204 8.95395C41.8096 9.54894 42.4046 9.71893 43.2758 9.71893zM43.3927 6.999C42.3621 6.999 41.7458 6.17028 41.7458 5.04406 41.7458 3.90721 42.3621 3.08911 43.3927 3.08911 44.0301 3.08911 44.6464 3.4716 44.9226 3.91784V6.15965C44.6464 6.60589 44.0301 6.999 43.3927 6.999zM47.7086 1.77165C48.0061 1.77165 48.2505 1.5379 48.2505 1.24041 48.2505.942919 48.0061.698551 47.7086.698551 47.4217.698551 47.1774.942919 47.1774 1.24041 47.1774 1.5379 47.4217 1.77165 47.7086 1.77165zM48.1124 7.63649V2.50475H47.3155V7.63649H48.1124zM50.9981 7.76398C51.4656 7.76398 51.7525 7.62586 51.9544 7.43462L51.7206 6.83963C51.6144 6.95651 51.4019 7.05213 51.1787 7.05213 50.8281 7.05213 50.6581 6.77589 50.6581 6.3934V3.20598H51.6994V2.50475H50.6581V1.10229H49.8613V2.50475H49.0113V3.20598H49.8613V6.56339C49.8613 7.32837 50.2438 7.76398 50.9981 7.76398zM56.8305 7.63649V4.10908C56.8305 2.86599 55.9274 2.37726 54.8437 2.37726 54.0043 2.37726 53.3456 2.6535 52.7931 3.22723L53.165 3.77972C53.6218 3.29098 54.1212 3.06786 54.7374 3.06786 55.4812 3.06786 56.0337 3.46098 56.0337 4.15158V5.07593C55.6193 4.59782 55.0349 4.3747 54.3337 4.3747 53.4625 4.3747 52.5381 4.91656 52.5381 6.06403 52.5381 7.17963 53.4625 7.76398 54.3337 7.76398 55.0243 7.76398 55.6087 7.51962 56.0337 7.05213V7.63649H56.8305zM54.6206 7.19025C53.8768 7.19025 53.3562 6.72276 53.3562 6.07466 53.3562 5.41592 53.8768 4.94844 54.6206 4.94844 55.1837 4.94844 55.7255 5.16093 56.0337 5.58592V6.55277C55.7255 6.97776 55.1837 7.19025 54.6206 7.19025zM59.2247 7.63649V.549805H58.4279V7.63649H59.2247zM62.8861 5.41592V4.71469H60.3362V5.41592H62.8861zM64.7646 7.63649L67.4739 3.6416V7.63649H68.2708V2.50475H67.4845L64.7965 6.42527V2.50475H63.9996V7.63649H64.7646zM70.6587 7.63649V5.34155H73.3362V7.63649H74.133V2.50475H73.3362V4.64032H70.6587V2.50475H69.8619V7.63649H70.6587zM77.456 7.63649V3.20598H78.9541V2.50475H75.1717V3.20598H76.6591V7.63649H77.456zM82.3151 7.76398C83.1545 7.76398 83.8451 7.48774 84.3551 6.97776L83.9726 6.45714C83.5688 6.87151 82.9739 7.10525 82.3895 7.10525 81.2845 7.10525 80.6046 6.29777 80.5408 5.33093H84.6951V5.12906C84.6951 3.58847 83.7813 2.37726 82.2301 2.37726 80.7639 2.37726 79.7015 3.57785 79.7015 5.06531 79.7015 6.66964 80.7958 7.76398 82.3151 7.76398zM83.9088 4.74657H80.5408C80.5833 3.96034 81.1252 3.03599 82.2195 3.03599 83.3882 3.03599 83.8982 3.98159 83.9088 4.74657zM89.5769 2.50475H85.9857V7.63649H86.7826V3.20598H89.5769V2.50475zM93.142 7.76398C94.4913 7.76398 95.4263 6.72276 95.4263 5.06531 95.4263 3.39723 94.4913 2.37726 93.142 2.37726 92.4195 2.37726 91.782 2.74912 91.4101 3.26973V2.50475H90.6133V9.59143H91.4101V6.86088C91.8245 7.43462 92.4407 7.76398 93.142 7.76398zM92.9401 7.05213C92.3132 7.05213 91.6864 6.66964 91.4101 6.2234V3.90721C91.6864 3.46098 92.3132 3.08911 92.9401 3.08911 93.9707 3.08911 94.5869 3.92846 94.5869 5.06531 94.5869 6.20215 93.9707 7.05213 92.9401 7.05213zM100.699 7.63649V4.10908C100.699 2.86599 99.7959 2.37726 98.7121 2.37726 97.8728 2.37726 97.2141 2.6535 96.6616 3.22723L97.0334 3.77972C97.4903 3.29098 97.9897 3.06786 98.6059 3.06786 99.3496 3.06786 99.9021 3.46098 99.9021 4.15158V5.07593C99.4877 4.59782 98.9034 4.3747 98.2021 4.3747 97.3309 4.3747 96.4066 4.91656 96.4066 6.06403 96.4066 7.17963 97.3309 7.76398 98.2021 7.76398 98.8928 7.76398 99.4771 7.51962 99.9021 7.05213V7.63649H100.699zM98.489 7.19025C97.7453 7.19025 97.2247 6.72276 97.2247 6.07466 97.2247 5.41592 97.7453 4.94844 98.489 4.94844 99.0521 4.94844 99.594 5.16093 99.9021 5.58592V6.55277C99.594 6.97776 99.0521 7.19025 98.489 7.19025zM104.028 7.63649V3.20598H105.526V2.50475H101.744V3.20598H103.231V7.63649H104.028zM108.813 7.76398C110.375 7.76398 111.352 6.55277 111.352 5.06531 111.352 3.57785 110.375 2.37726 108.813 2.37726 107.251 2.37726 106.274 3.57785 106.274 5.06531 106.274 6.55277 107.251 7.76398 108.813 7.76398zM108.813 7.05213C107.719 7.05213 107.102 6.11715 107.102 5.06531 107.102 4.02409 107.719 3.08911 108.813 3.08911 109.907 3.08911 110.513 4.02409 110.513 5.06531 110.513 6.11715 109.907 7.05213 108.813 7.05213zM115.18 7.76398C116.529 7.76398 117.464 6.72276 117.464 5.06531 117.464 3.39723 116.529 2.37726 115.18 2.37726 114.457 2.37726 113.82 2.74912 113.448 3.26973V2.50475H112.651V9.59143H113.448V6.86088C113.862 7.43462 114.479 7.76398 115.18 7.76398zM114.978 7.05213C114.351 7.05213 113.724 6.66964 113.448 6.2234V3.90721C113.724 3.46098 114.351 3.08911 114.978 3.08911 116.009 3.08911 116.625 3.92846 116.625 5.06531 116.625 6.20215 116.009 7.05213 114.978 7.05213z"
+                fill="#222"
+              ></path>
+              <circle
+                cx="10.808"
+                cy="21.192"
+                r="10.808"
+                fill="#1C6CD5"
+              ></circle>
+              <circle cx="21.524" cy="4.797" r="3.755" fill="#1C6CD5"></circle>
+            </svg> -->
+          </a>
+          <div class="wrapper">git status
+            <div class="burger-container">
+              <div class="burger-button">
+                <div class="burger-lines"></div>
+              </div>
+              <nav class="burger-menu-nav">
+                <a href="#" class="burger-menu-link">One</a>
+                <a href="#" class="burger-menu-link">Two</a>
+                <a href="#" class="burger-menu-link">Three</a>
+                <a href="#" class="burger-menu-link">Four</a>
+              </nav>
+              <div class="burger-menu-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <section class="main-content__hero">
+          <div class="main-content__heroText">
+            <h1>New Automation Tool for Your Home</h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              tristique vulputate ultrices ut mauris tellus at. Posuere
+              sollicitudin odio tellus elit.
+            </p>
+            <button class="button">See Our Progects</button>
+          </div>
+          <div class="main-content__heroIllistration">
+            <img src="/" alt="heroIllistration" />
+          </div>
+        </section>
 
+        <section class="main-content__whatWeDo">
+          <div class="main-content__whatWeDo-text+form">
+            <h2>What we do to help our client grow in digital era,</h2>
+          </div>
+          <div class="main-content__whatWeDo-formsContainer">
+            <img src="/" alt="forms_container_1" />
+          </div>
+
+          <div class="main-content__whatWeDo-forms">
+            <div class="main-content__whatWeDo-formsContainer">
+              <img src="/" alt="forms_container_2" />
+            </div>
+            <div class="main-content__whatWeDo-formsContainer">
+              <img src="/" alt="forms_container_3" />
+            </div>
+          </div>
+        </section>
+
+        <section class="main-content__ourClient">
+          <div class="main-content__ourClient_ourBelovedClient">
+            <div class="main-content__ourClient_ourBelovedClient_text">
+              <h3>Our Beloved Client</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+
+            <div class="main-content__ourClient_ourBelovedClient_table"></div>
+          </div>
+
+          <div class="main-content__ourClient_workTeam">
+            <div class="main-content__ourClient_workTeam_text">
+              <h3>Interested to work with our team?</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+            <button class="button">Let’s Talk</button>
+
+            <div class="modal">
+              <div class="modal__header">
+                <h3>SEND US MESSAGE</h3>
+              </div>
+
+              <div class="modal__body">
+                <div class="modal__body-form">
+                  <div class="form-row">
+                    <div class="form-col">
+                      <label for="/">Full Name</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-col">
+                      <label for="/">Email</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-col">
+                      <label for="/">Message</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <button class="button">SUBMIT</button>
+                  </div>
+                </div>
+
+                <button class="button-x" data-fancybox-close="" title="Close">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__contacts">
+          <ul class="footer__contacts-list">
+            <li class="footer__contacts-list-item">
+              <img src="" alt="logo" />
+            </li>
+            <li class="footer__contacts-list-item">
+              <div class="footer__contacts-list-item-link">
+                <p class="footer__contacts-text">A.</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+            </li>
+
+            <li class="footer__contacts-list-item">
+              <div class="footer__contacts-list-item-link">
+                <p class="footer__contacts-text">T.</p>
+                <a class="link" href="/"> +62-812-7313-4321</a>
+              </div>
+            </li>
+
+            <li class="footer__contacts-list-item">
+              <div class="footer__contacts-list-item-link">
+                <p class="footer__contacts-text">E.</p>
+                <a class="link" href="/"> hello.afrian@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__aboutUs">
+          <ul class="footer__aboutUs-list">
+            <li class="footer__aboutUs-list-item">
+              <h4>About US</h4>
+            </li>
+            <li class="footer__aboutUs-list-item">
+              <a class="link" href="/">About</a>
+            </li>
+            <li class="footer__aboutUs-list-item">
+              <a class="link" href="/">What We Do</a>
+            </li>
+            <li class="footer__aboutUs-list-item">
+              <a class="link" href="/">Project</a>
+            </li>
+            <li class="footer__aboutUs-list-item">
+              <a class="link" href="/">How It Work With Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__followUs">
+          <ul class="footer__followUs-list">
+            <li class="footer__followUs-list-item">
+              <h4>Follow US</h4>
+            </li>
+            <li class="footer__followUs-list-item">
+              <a class="link" href="/">Instagram</a>
+            </li>
+            <li class="footer__followUs-list-item">
+              <a class="link" href="/">Facebook</a>
+            </li>
+            <li class="footer__followUs-list-item">
+              <a class="link" href="/">LinkedIn</a>
+            </li>
+            <li class="footer__followUs-list-item">
+              <a class="link" href="/">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
-  <script src="/pages/homepage/dist/bundle.js"></script>
+  <script src="/d-element-frontend-test/pages/homepage/dist/bundle.js"></script>
 </html>
-  

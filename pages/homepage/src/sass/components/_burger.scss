@@ -1,33 +1,9 @@
-@charset "UTF-8";
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-.aa {
-  background-color: rgb(146, 185, 185);
-  font-size: 40px;
-}
-
+// body {
+//   height: 100vh;
+//   background: rgb(253, 231, 231);
+//   margin: 0;
+//   padding: 0;
+// }
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -43,14 +19,23 @@ ol[class] {
   right: 0;
   margin: 10px;
   z-index: 21;
-  background: linear-gradient(to bottom, #f1cdb3 4%, transparent 5%, transparent 48%, #f1cdb3 49%, #f1cdb3 52%, transparent 53%, transparent 96%, #f1cdb3 97%, #f1cdb3 100%);
+  background: linear-gradient(
+    to bottom,
+    #f1cdb3 4%,
+    transparent 5%,
+    transparent 48%,
+    #f1cdb3 49%,
+    #f1cdb3 52%,
+    transparent 53%,
+    transparent 96%,
+    #f1cdb3 97%,
+    #f1cdb3 100%
+  );
   transition: 0.5s;
 }
-
 .burger-container_active .burger-lines {
   rotate: 90deg;
 }
-
 .burger-menu-nav {
   list-style-type: none;
   padding: 0;
@@ -65,12 +50,10 @@ ol[class] {
   right: -120%;
   transition: 0.7s;
 }
-
 .burger-container_active .burger-menu-nav {
   right: 0;
   transition: 0.7s;
 }
-
 /* .burger-menu-link{  } */
 .burger-menu-overlay {
   display: none;
@@ -80,14 +63,7 @@ ol[class] {
   height: 100vh;
   z-index: 10;
 }
-
 .burger-container_active .burger-menu-overlay {
   display: block;
   background: rgba(0, 0, 0, 0.1);
 }
-
-.modal {
-  display: none;
-}
-
-/*# sourceMappingURL=style.css.map */
