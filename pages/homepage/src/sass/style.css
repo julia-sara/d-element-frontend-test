@@ -25,7 +25,8 @@ ol[class] {
 }
 
 .flow-container {
-  max-width: 100%;
+  width: 1366px;
+  margin: 0 auto;
 }
 
 .header__container {
@@ -75,7 +76,7 @@ ol[class] {
 
 .main-content__ourClient {
   background: url(/d-element-frontend-test/assets/img/background2.svg) no-repeat;
-  min-height: 1549px;
+  min-height: 1527px;
   margin-top: 15%;
 }
 
@@ -145,7 +146,7 @@ ol[class] {
   margin-top: -30%;
   margin-right: 14%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -346,11 +347,10 @@ p {
 .burger-button {
   position: fixed;
   z-index: 21;
-  margin-right: 5%;
+  right: 50px;
 }
 
 .burger-lines {
-  /* display: none; */
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -386,11 +386,9 @@ p {
   transition: 0.7s;
 }
 
-/* .burger-menu-link{  } */
 .burger-menu-overlay {
   display: none;
   position: fixed;
-  /* вся ширина и длина экрана экрана */
   width: 1000vw;
   height: 1000vh;
   z-index: 3;
@@ -456,8 +454,210 @@ p {
   height: 10px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal {
-  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ModalContainer {
+  max-width: 540px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.ModalBox1,
+.ModalBox2 {
+  position: relative;
+  width: 540px;
+  height: 800px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  background: #fafafa;
+  overflow-y: auto;
+}
+
+.clModalBtn {
+  position: absolute;
+  margin-left: 90%;
+  padding: 9px 10px 7px;
+  border: 1px solid #f1cdb3;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal__close-icon {
+  cursor: pointer;
+  border: 1px #f1cdb3 solid;
+  border-radius: 50%;
+  padding: 10px 13px;
+  margin: 0px 0px 0px 100%;
+}
+
+.ModalTextBlock {
+  margin: 50px 20px;
+  width: 351px;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ModalText {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* or 17px */
+  letter-spacing: 0.06em;
+}
+
+.ModalH3 {
+  font-family: Gilroy;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: rgb(31, 63, 104);
+}
+
+.modalInput {
+  width: 428px;
+  height: 72px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1240px) {
+  body {
+    overflow-x: hidden;
+  }
+  .flow-container {
+    width: 1000px;
+  }
+  .header__container {
+    margin-left: 15px;
+  }
+  .main-content__heroIllistration-img {
+    width: 450px;
+    opacity: 80%;
+  }
+  .main-content__whatWeDo-formsContainer1 {
+    margin: 0 auto;
+  }
+  .container {
+    width: 700px;
+  }
+  .main-content__ourClient_workTeam_text {
+    margin-bottom: 20px;
+  }
+  .footer-wrapper {
+    margin-top: -40%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .main-content__heroIllistration-img {
+    width: 450px;
+    opacity: 30%;
+  }
+  .footer-wrapper {
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .flow-container {
+    width: 360px;
+  }
+  .burger-button {
+    position: absolute;
+    z-index: 21;
+    right: 0px;
+  }
+  .main-content__hero {
+    min-height: 444px;
+    padding: 0 0 0 5%;
+  }
+  .main-content__heroText {
+    width: auto;
+    min-height: auto;
+  }
+  .main-content__heroIllistration-img {
+    opacity: 0%;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+  }
+  p {
+    letter-spacing: 0;
+  }
+  .main-content__whatWeDo {
+    padding: 0 3%;
+  }
+  .main-content__whatWeDo-textForm {
+    max-width: 100%;
+  }
+  .main-content__whatWeDo-formsContainer1,
+  .main-content__whatWeDo-formsContainer2 {
+    width: 330px;
+  }
+  .main-content__ourClient_ourBelovedClient {
+    padding-top: 25%;
+  }
+  .container {
+    width: 256px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .main-content__ourClient_workTeam {
+    margin-top: 47%;
+  }
+  .footer-wrapper {
+    margin-top: -100%;
+    background-color: rgb(90, 152, 208);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer__line {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

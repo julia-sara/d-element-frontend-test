@@ -1,24 +1,11 @@
-// body {
-//   height: 100vh;
-//   background: rgb(253, 231, 231);
-//   margin: 0;
-//   padding: 0;
-// }
-// .wrapper {
-//   max-width: 1000px;
-//   margin: 0 auto;
-//   background: rebeccapurple;
-// }
 .burger-button {
   position: fixed;
   z-index: 21;
-  margin-right: 5%;
+  right: 50px;
 }
 .burger-lines {
-  /* display: none; */
   width: 30px;
   height: 30px;
-  // position: fixed;
   cursor: pointer;
   right: 0;
   margin: 10px;
@@ -59,11 +46,10 @@
   right: 0;
   transition: 0.7s;
 }
-/* .burger-menu-link{  } */
+
 .burger-menu-overlay {
   display: none;
   position: fixed;
-  /* вся ширина и длина экрана экрана */
   width: 1000vw;
   height: 1000vh;
   z-index: 3;
