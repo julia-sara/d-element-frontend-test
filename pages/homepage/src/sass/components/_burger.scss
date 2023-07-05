@@ -9,10 +9,11 @@
 //   margin: 0 auto;
 //   background: rebeccapurple;
 // }
-.burger-button{
+.burger-button {
   position: fixed;
-z-index: 21;
-margin-right: 5%;}
+  z-index: 21;
+  margin-right: 5%;
+}
 .burger-lines {
   /* display: none; */
   width: 30px;
@@ -68,13 +69,9 @@ margin-right: 5%;}
   z-index: 3;
   top: 0%;
   right: -120%;
-  
 }
 .burger-container_active .burger-menu-overlay {
   display: block;
   background: rgba(0, 0, 0, 0.1);
   right: 0;
-}
-.body {
-  overflow: hidden;
 }
