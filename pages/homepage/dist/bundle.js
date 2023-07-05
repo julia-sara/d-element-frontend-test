@@ -1,0 +1,1 @@
+!function(){const e=document.querySelector(".burger-button"),t=document.querySelector(".burger-container");e.addEventListener("click",(()=>{t.classList.toggle("burger-container_active")}))}();
